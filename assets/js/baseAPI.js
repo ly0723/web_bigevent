@@ -13,7 +13,6 @@ $.ajaxPrefilter(function (options) {
 
   //无论成功或者失败都会被调用
   options.complete = function (res) {
-    console.log(res);
     if (
       res.responseJSON.status === 1 &&
       res.responseJSON.message === "身份认证失败！"
